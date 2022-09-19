@@ -28,4 +28,4 @@ io.on("connection", (socket) => {
         socket.to(data.channel).emit("delete_message", data.messageId);
     });
 });
-server.listen(process.env.PORT, () => console.log("server is running"));
+server.listen(process.env.PORT, () => console.log("server is running on port " + process.env.PORT));
